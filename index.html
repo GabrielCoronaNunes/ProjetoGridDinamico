@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
  <main>
@@ -14,21 +14,21 @@
   <h2>SELECIONE A QUANTIDADE DE PERFIS</h2>
 
   <div class="grid-input">
-    <button>&#8592</button>
-    <p>1</p>
-    <button>&#x2192</button>
+    <button id="decrement-button">&#8592</button>
+    <p id="quantity-display">1</p>
+    <button id="increment-button">&#x2192</button>
     <br>
     <input type="range" min="1" max="10" value="1" id="slider">
   </div>
 
   <h1>SELECIONE O PERÍODO DO SEU PAGAMENTO</h1>
-  <button>Mensal</button>
-  <button>Anual</button>
+  <button class="option-button" data-value="150" data-url="http://www.example1.com">Mensal</button>
+  <button class="option-button" data-value="100" data-url="http://www.example2.com">Anual</button>
 
   <div class="div-output">
     <h1>Plano Completo</h1>
-    <h1>valor</h1>
-    <button>Compre Agora</button>
+    <h1 id="price-display"></h1>
+    <button  id="buy-button" >Compre Agora</button>
   </div>
  </main>
 
